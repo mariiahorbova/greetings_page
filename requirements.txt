@@ -1,0 +1,8 @@
+requests==2.26.0
+fastapi==0.70.0
+jinja2==3.0.2
+starlette~=0.16.0
+pydantic~=1.9.0
+uvicorn==0.15.0
+python-multipart==0.0.5
+motor==2.2.0

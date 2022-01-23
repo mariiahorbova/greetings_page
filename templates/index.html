@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Сторінка привітань</title>
+    <link href="{{ url_for('static', path='/text.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <form style="margin-top: 25%;" action = "/user/" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+            <label class="shadow1 text4">Ім'я</label>
+            <input name="name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+            <label class="shadow1 text4">Прізвище</label>
+            <input name="surname" type="text" class="form-control">
+            </div>
+            <button class="btn btn-success" type="submit" style="margin-bottom: 50px;">Привітатись!</button>
+        </form>
+        <button class="btn btn-success" onclick="window.location.href = 'user/all'" name="button">Всі люди, з якими привітались</button>
+    </div>
+
+</body>
+</html>

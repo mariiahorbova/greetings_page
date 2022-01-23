@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Привітання</title>
+    <link href="{{ url_for('static', path='/text.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="plate">
+        {% if new_user %}
+        <p class="script"><span>Привіт</span></p>
+        {% else %}
+        <p class="script"><span>Вже вітались</span></p>
+        {% endif %}
+        <p class="shadow text1">{{name}}</p>
+        <p class="shadow text1">{{surname}}</p>
+        <p class="script"><span>*-*</span></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список привітань</title>
+    <link href="{{ url_for('static', path='/text.css') }}" rel="stylesheet">
+</head>
+<body>
+    <p class="shadow text1">Список людей, з якими привітались:</p>
+    <ul>
+        {% for user in users %}
+        <li class="shadow1 text4">{{user.name}} {{user.surname}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
